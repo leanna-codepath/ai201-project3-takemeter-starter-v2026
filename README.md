@@ -39,10 +39,7 @@
 
 ## What This Does
 
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
-
-
+This model takes posts from a dataset on Kraggle, which in turn scrapped posts from the r/dataset subreddit on reddit. It then sorts these posts into `advice`, `question`, or `friendly outreach`. `advice` contains posts that give suggestions to another user, `question` posts asks questions or for advice, and `friendly outreach` consists of posts that are purely polite or networking.
 
 ---
 
@@ -93,9 +90,6 @@ If the post has a suggestion or recommendation included in it, it's automaticall
 ---
 
 ## The Dataset
-
-<!-- Where you collected from, how you labelled, your counts, and three hard
-     cases. -->
 
 **Where the posts came from:**
 The posts came from a Kraggle dataset, which in turn scrapped posts from the r/dataset community subreddit from reddit. 
@@ -158,26 +152,20 @@ of next unit's variance. -->
 
 ## How I Used AI
 
-<!-- Two specific moments — what you asked, what came back, what you changed.
-
-     ⚠️ Plus disclosure of any pre-labelling. If you had a model pre-label a
-     batch and then read and corrected every one, say that. It's an allowed
-     workflow and disclosing it costs you nothing. Not disclosing it is the
-     problem. -->
-
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked Claude to look over my criterion and decide if they were clear enough for other people to use them.
+- *What came back:* It gave suggestions on how to add more tolerance to some of my criterion.
+- *What I changed:* Some of its suggestions weren't relevant to my dataset so I discarded them.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked Claude to pre-label 180 of my text posts.
+- *What came back:* Claude went through and labeled each post, but I was unsure of the accuracy.
+- *What I changed:* I changed a few of the labels I disagreed with.
 
 **Pre-labelling disclosure:**
+Claude was used to pre-label the text posts, which were then checked and changed if needed.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
