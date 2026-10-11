@@ -54,35 +54,47 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `question`
 
 **Definition:**
+Asks a question or for advice from the subreddit
 
 **Example 1:**
->
+>Hi, can I get a link please? I am re implementing BertAA from this paper (https://aclanthology.org/2020.icon-main.16/) and want to test it out on reddit data.
 
 **Example 2:**
->
+>thanks for the input. As you mentiond, I have sent out emails to a lot of logistics companies and none of them responded. As a last resort, I can get in touch with my school. Anyway, do you know of any other place that I might find help from?
 
-### `label_two`
+### `advice`
 
 **Definition:**
+Gives advice or a recommendation to another user, frequently includes a link
 
 **Example 1:**
->
+>You should contact No Such Agency for reliable data.
 
 **Example 2:**
->
+>I recommend [this](https://www.fuw.edu.pl/~durka/ksiazki/MP_UNI.html) book.
+
+### `friendly outreach`
+
+**Definition:**
+Posts made purely to be friendly, such as networking or being polite.
+
+**Example 1:**
+>Ah nice one. Best of luck with the baby. If you are looking for an internship or anything message me in case I know anyone in the area you are interested in
+
+**Example 2:**
+>Ah i didnt know there was another Irish Data head here.
 
 ### The hardest boundary
 
 **Which two labels:**
+The hardest boundary is between `advice` and `friendly outreach` as they can potentially overlap in many ways. For example, a person
+may be friendly while also giving advice about a topic.
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
-
-
+If the post has a suggestion or recommendation included in it, it's automatically advice, even if there is a friendly tone. Friendly outreach posts should only have polite statements, no advice.
 
 ---
 
