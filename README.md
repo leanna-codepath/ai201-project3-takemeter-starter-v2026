@@ -48,12 +48,6 @@
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
-
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
-
 ### `question`
 
 **Definition:**
@@ -104,44 +98,43 @@ If the post has a suggestion or recommendation included in it, it's automaticall
      cases. -->
 
 **Where the posts came from:**
+The posts came from a Kraggle dataset, which in turn scrapped posts from the r/dataset community subreddit from reddit. 
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** 
+The first 20 posts were cold-labeled by myself. The next 180 posts were then pre-labeled wit AI and then corrected by reading
+through them.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `question` | 49 | 24.5% |
+| `advice` | 106 | 53% |
+| `friendly outreach` | 45 | 22.5% |
+| **Total** | 200 | 100% |
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
+> *The post:* Apologies for not having any input for how to obtain this dataset, but just wanted to say that I had tried looking for figures and charts on this and was very surprised at the lack of good data and visualisations. Would be great to see number of deaths, conflicts and armed personnel for various countries, possibly adjust adjusted against GDP, population or other figures
 >
-> *Could have been:*
+> This post could have been `advice` or `friendly outreach`
 >
-> *I chose, because:*
+> After considering it further, I changed the label to `advice` because, while the overall tone is very friendly, the main topic of the post is offering a suggestion for improvement.
 
 **2.**
-> *The post:*
+> *The post:* Have you tried [CDC Wonder](https://wonder.cdc.gov/)?
 >
-> *Could have been:*
+> This could have been labeled `advice` or `question`.
 >
-> *I chose, because:*
+> This case was very common, where suggestions were phrased/formatted as a question. In the end, I labeled it as `advice` because its main purpose was to suggest a resource to another user.
 
 **3.**
-> *The post:*
+> *The post:* Like this? https://ourworldindata.org/grapher/population-by-country
 >
-> *Could have been:*
+> This post could have been `advice` or `question`.
 >
-> *I chose, because:*
+> This was a very difficult case because it clearly lacks context. The user could either be suggesting a resource that another user was asking for or they could have been asking if a certain resource was correct. Without more informaiton, I chose to focus on the question format and labeled it as `question`.
 
 ---
 
