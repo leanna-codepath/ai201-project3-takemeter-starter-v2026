@@ -53,61 +53,51 @@ whether you hit them:
 
 ## 1.
 
-<!-- Your criterion. It must name a number. -->
-
-
+The label `friendly outreach` has an F1 of at least 0.60 on the held out set.
 
 **Why this target:**
-
+I picked 0.60 F1 for the `friendly outreach` label because it is my smallest label, and also likely to be confused with the
+`advice` label.
 
 
 ---
 
 ## 2.
 
-<!-- Your criterion. -->
-
+The label counts should be split within +/- 5 percentage points of 45/45/10 for `question`/`advice`/`friendly outreach`.
 
 
 **Why this target:**
-
-
+I chose the following split counts because `friendly outreach` is more likely to have far less posts than the other two. The remainging
+split between `question` and `advice` should be evenly split however, as it can be construed as each question has at least one answer.
 
 ---
 
 ## 3.
 
-<!-- Your criterion. -->
-
-
+Overall accuracy is at least 0.65 on the held-out set, across all three seeds.
 
 **Why this target:**
-
-
+The model should be better than a coin-flip, which is why this target is over 33%. However, because there is potential for overlap, specifically between `advice` and `friendly outreach` due to the similarity of their content or `question` and `advice` due to them having similar counts, the bar is lower than 70%.
 
 ---
 
 ## 4.
 
-<!-- Your criterion. -->
-
-
+When a second person labels a random sample of 30 posts, we agree on at least 80% of them.
 
 **Why this target:**
-
+As previously stated, there are potentials for difficult seperation between certain posts. However, with the addition of the hard boundaries stated in the README, two people should still be able to agree on the majority of the posts.
 
 
 ---
 
 ## 5.
 
-<!-- Your criterion. -->
-
-
+Predictions with a confidence greater than or equal to 0.80 should be correct at least 0.80 of the time. If confidence is less than 0.50, it should be correct no more than 0.60 of the time.
 
 **Why this target:**
-
-
+I expect the model to be most confident on clear `question` posts, with less confidence about the other two labels. Confident predictions should also be no more accurate than unsure ones, otherwise it's useless for flagging posts.
 
 ---
 
