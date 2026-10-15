@@ -192,9 +192,8 @@ Claude was used to pre-label the text posts, which were then checked and changed
 I predict that the trained model will beat the baseline model on the F1 score for the `friendly outreach` label/
 
 **What the gap actually means:**
-<!-- If the baseline matched your trained model, your fine-tuning added
-     nothing — and that is a real finding, not a failure. Say it plainly. -->
-
+The baseline model actually did better than my trained model, meaning my fine-tuning added nothing and
+had a negative impact instead.
 
 
 ---
@@ -212,21 +211,18 @@ I predict that the trained model will beat the baseline model on the F1 score fo
 | 4.  |  |  |  |  |  |
 | 5.  |  |  |  |  |  |
 
+
 ### Confusion matrix
 
-<!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
-     An image of a matrix earns nothing. -->
-
-| true \ predicted |  |  |  |
+| true \ predicted | question | advice | friendly outreach |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **question** | 0 | 7 | 0 |
+| **advice** | 0 | 16 | 0 |
+| **friendly outreach** | 0 | 7 | 0 |
 
 **My biggest off-diagonal number, and what it means:**
-<!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
-     direction. "7 real analysis posts were called hot_take and only 3 went the
-     other way" is a direction, not just an error rate. -->
+7 real `question` and `friendly outreach` posts were called `analysis` while 0 went the other way. This may mean
+that the dataset is too skewed towards `advice` posts or that the `advice` label definition is too broad.
 
 
 
