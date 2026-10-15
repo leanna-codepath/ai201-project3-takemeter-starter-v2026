@@ -181,14 +181,15 @@ Claude was used to pre-label the text posts, which were then checked and changed
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.567 | 0.533 | -0.033 |
+| Macro F1 | 0.320 | 0.232 | -0.088 |
+| F1 — `advice` | 0.711 | 0.696 | -0.015 |
+| F1 — `friendly outreach` | 0.000 | 0.000 | +0.000 |
+| F1 — `question` | 0.250 | 0.000 | -0.250 |
+
 
 **What I predicted before I looked:**
-<!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
-     prediction made afterwards isn't one. -->
+I predict that the trained model will beat the baseline model on the F1 score for the `friendly outreach` label/
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added

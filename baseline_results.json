@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": false,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.5333333333333333,
+    "f1_macro": 0.5517460317460318,
+    "per_label": {
+      "advice": {
+        "precision": 0.8,
+        "recall": 0.25,
+        "f1": 0.38095238095238093,
+        "support": 16
+      },
+      "friendly outreach": {
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143,
+        "f1": 0.7142857142857143,
+        "support": 7
+      },
+      "question": {
+        "precision": 0.3888888888888889,
+        "recall": 1.0,
+        "f1": 0.56,
+        "support": 7
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "I recommend [this](https://www.fuw.edu.pl/~durka/ksiazki/MP_UNI.html) book.",
+      "gold": "advice",
+      "predicted": "advice"
+    },
+    {
+      "text": "Nice one, thanks for that. It will fit very nicely with an assignment I am doing regarding the HSE.",
+      "gold": "friendly outreach",
+      "predicted": "friendly outreach"
+    },
+    {
+      "text": "Like this? https://ourworldindata.org/grapher/population-by-country",
+      "gold": "question",
+      "predicted": "question"
+    },
+    {
+      "text": "[The Vehicle Energy Dataset](https://github.com/gsoh/VED) might be interesting",
+      "gold": "advice",
+      "predicted": "question"
+    },
+    {
+      "text": "One user already mentioned height and weight. IQ scores are also normally distributed, but by design.",
+      "gold": "advice",
+      "predicted": "friendly outreach"
+    },
+    {
+      "text": "Depending on your purpose, you could try going in the opposite direction. I believe data on BPM and key (maybe chord progression, most importantly) are available (or at least computable), and are those are traditionally indicators of mood. Lyric data is also readily available, and that could be used for sentiment analysis.",
+      "gold": "advice",
+      "predicted": "question"
+    },
+    {
+      "text": "No problem, always happy to help",
+      "gold": "friendly outreach",
+      "predicted": "friendly outreach"
+    },
+    {
+      "text": "https://www.springer.com/journal/10899 Some assembly required, but this could be a place to start. You may need to reach out to individual authors if you see anything that seems pertinent.",
+      "gold": "advice",
+      "predicted": "question"
+    },
+    {
+      "text": "Johns Hopkins is an obvious source. They have broken data down to at least county level. Census tract would be better. You\u00e2\u20ac\u2122ll probably need to combine with an additional source to correlate with congressional district and party affiliation.",
+      "gold": "advice",
+      "predicted": "question"
+    },
+    {
+      "text": "This could help too.  I appreciate the link",
+      "gold": "friendly outreach",
+      "predicted": "friendly outreach"
+    },
+    {
+      "text": "Saving for later",
+      "gold": "friendly outreach",
+      "predicted": "question"
+    },
+    {
+      "text": "That's 50hz for Europe and England? If so, it should be 60hz for USA",
+      "gold": "advice",
+      "predicted": "question"
+    },
+    {
+      "text": "Are you looking for the number of times people look up translations for certain phrases? Please clarify ",
+      "gold": "question",
+      "predicted": "question"
+    },
+    {
+      "text": "Have you tried the Consumer Expenditure Survey produced by the BLS?",
+      "gold": "question",
+      "predicted": "question"
+    },
+    {
+      "text": "did you find a dataset ?",
+      "gold": "question",
+      "predicted": "question"
+    },
+    {
+      "text": "Bureau of meteorology, zenodo.org, osf.io, datadryad.org/stash, data.mendeley.com, figshare.com, Harvard dataverse, PRB, NASA, transport accident commission, are some that might be of some help for future. Or just google \"unclean data sets for data cleaning practice\" or something. There are heappsss",
+      "gold": "advice",
+      "predicted": "advice"
+    },
+    {
+      "text": "Ahh yes! This is what I'm looking for thank you for the response",
+      "gold": "friendly outreach",
+      "predicted": "friendly outreach"
+    },
+    {
+      "text": "IQ scores are designed to be normally distributed. Quite easy to find as well.",
+      "gold": "advice",
+      "predicted": "question"
+    },
+    {
+      "text": "Yup, sorry about it. Some schools have access to VC/PE databases, but very few at that. Good luck with your project. FWIW I think using firm characteristics to get at VC outcomes is a very interesting idea if you can ever find a data source!",
+      "gold": "advice",
+      "predicted": "question"
+    },
+    {
+      "text": "Just crawl it using Beautiful Soup or something comparable.",
+      "gold": "advice",
+      "predicted": "advice"
+    },
+    {
+      "text": "Have you tried [CDC Wonder](https://wonder.cdc.gov/)?",
+      "gold": "advice",
+      "predicted": "question"
+    },
+    {
+      "text": "Corresponding author here if anyone has any questions.",
+      "gold": "friendly outreach",
+      "predicted": "friendly outreach"
+    },
+    {
+      "text": "Segmentation and prediction of what?  As in segmenting images so that people in them are separated out. Or predicting who is going to win the nextworld cup?",
+      "gold": "question",
+      "predicted": "question"
+    },
+    {
+      "text": "watch this playlist https://www.youtube.com/watch?v=\\_BdBJOOqMesamp;list=PLtGXgNsNHqPTgP9wyR8pmy2EuM2ZGHU5Z",
+      "gold": "advice",
+      "predicted": "friendly outreach"
+    },
+    {
+      "text": "There's a TikToker whose channel is based on him rating deadlifts. You would need to dl those (iirc the dl by channel TikTok bots ain't working currently), see if the rate is correct and if it's on the hashtags, and voila.",
+      "gold": "advice",
+      "predicted": "question"
+    },
+    {
+      "text": "Note that the involved governments could have something to gain by releasing false information. I'd find a news source you trust who has reporters on the ground there and go with that. Also, many news outlets are sourcing troop locations to [https://www.understandingwar.org/](https://www.understandingwar.org/) , which itself is sourcing mostly to government information, so again, take it with a grain of salt.",
+      "gold": "advice",
+      "predicted": "advice"
+    },
+    {
+      "text": "Hi, did you find any such image datasets? I only found textual datasets",
+      "gold": "question",
+      "predicted": "question"
+    },
+    {
+      "text": "What's the aprox timeframe on the dump?",
+      "gold": "question",
+      "predicted": "question"
+    },
+    {
+      "text": "This actually helps a lot. I didn't think to check if github had an FEC community and that should really give me an edge.",
+      "gold": "friendly outreach",
+      "predicted": "advice"
+    },
+    {
+      "text": "I'm not exactly sure how many contracts the Enron data set has as attachments, but worth looking at.",
+      "gold": "advice",
+      "predicted": "question"
+    }
+  ]
+}
