@@ -205,11 +205,11 @@ had a negative impact instead.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. `friendly outreach` F1 | ≥ 0.60 | 0.0 | 0.0 | 0.44 | MISSED |
+| 2. Label counts split 45/45/10 for `question`/`advice`/`friendly outreach` | yes | no | no | no | MISSED |
+| 3. Overall accuracy | ≥ 0.65 | 0.53 | 0.53 | 0.60 | MISSED |
+| 4. Beats the baseline on accuracy | yes | no | no | no | MISSED |
+| 5. Greater confidence = greater correctness | yes | yes | yes | yes | MET |
 
 
 ### Confusion matrix
@@ -224,35 +224,23 @@ had a negative impact instead.
 7 real `question` and `friendly outreach` posts were called `analysis` while 0 went the other way. This may mean
 that the dataset is too skewed towards `advice` posts or that the `advice` label definition is too broad.
 
-
-
 ---
 
 ## Verdicts and Diagnoses
 
-<!-- MET or MISSED against LAST UNIT's target. The target has to hold across
-     all three seeds, not turn up sometimes. -->
-
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | `friendly outreach` F1 | ≥ 0.60 | MISSED | None of the seeds had an F1 greater than 0.60 for `friendly outreach` |
+| 2 | Label counts split 45/45/10 for `question`/`advice`/`friendly outreach` | yes | MISSED | All of the label counts for the test had a split around 23/53/23 |
+| 3 | Overall accuracy | ≥ 0.65 | MISSED | None of the seeds had an accuracy greater than 0.65 |
+| 4 | Beats the baseline on accuracy | yes | MISSED | The baseline model outperformed or met the trained model on all statistics. |
+| 5 | Greater confidence = greater correctness | yes | MET | The model had at least 80% correctness for the third of the predictions it was most confident on, and less than 60% correctness for what it was least confident on. |
 
 **Diagnoses**
 
-<!-- For each miss: the cause, and how you know. The four common causes are:
-     too few examples for a label, a boundary you applied inconsistently, a
-     genuinely hard label pair, and a task the model can't reach from this
-     much data.
+The misses for criteria 1 and 3 most likely come from vague label definitions, as the model predicted `advice` for every single post, showing there was a lack of clear distinction between each definition.
 
-     ⚠️ Use your agreement report as evidence. It is the only instrument you
-     have that can tell a LABELLING problem from a MODEL problem, and this
-     section is graded on whether you used it that way. -->
-
-
+The misses for criteria 2 and 4 most likely come from lopsided numbers for the posts in the training set, as there were more `advice` posts than the other 2, meaning the model had less to work with.
 
 ---
 

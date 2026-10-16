@@ -88,7 +88,11 @@ When a second person labels a random sample of 30 posts, we agree on at least 80
 
 **Why this target:**
 As previously stated, there are potentials for difficult seperation between certain posts. However, with the addition of the hard boundaries stated in the README, two people should still be able to agree on the majority of the posts.
-
+          > **Revised in unit 6:** The trained model beats the baseline model on every run.
+          >
+          > **Why revised:** The original criterion could not be accurately checked 
+          > when working alone. The new criterion can and also makes more sense, as
+          > a fine-tuned model should be more accurate than a deafult base model.
 
 ---
 
@@ -98,6 +102,16 @@ Predictions with a confidence greater than or equal to 0.80 should be correct at
 
 **Why this target:**
 I expect the model to be most confident on clear `question` posts, with less confidence about the other two labels. Confident predictions should also be no more accurate than unsure ones, otherwise it's useless for flagging posts.
+          > **Revised in unit 6:** Across all three seeds, the most-confident third of
+          > predictions is correct at least 0.80 of the time, and the least-confident
+          > third is correct no more than 0.60 of the time.
+          >
+          > **Why revised:** The original cutoffs (≥ 0.80 and < 0.50 confidence) couldn't
+          > be measured. results.json only reports accuracy by confidence third, and
+          > with 30 test posts and mean confidence around 0.6, almost no predictions
+          > reach 0.80. A group with zero or one prediction can't give a verdict. I kept
+          > the same 0.80 / 0.60 accuracy bars and the same intent; only the way
+          > "confident" is defined changed.
 
 ---
 
