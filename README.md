@@ -286,13 +286,14 @@ The fix did not help, as all the metrics are the exact same as before.
 
 ## What's Still Broken
 
-<!-- For each criterion still missed: what you'd do, and why you stopped. -->
-
+Criterion 1-4 have all still been missed. I attempted to fix the label definition, but it did not help. In the future, I would also
+look for more examples of posts with `question` and `friendly outreach` labels, as `advice` vastly outnumber them.
 
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
+I meant for my labels to clearly distinguish between posts that were questions, offering advice, or just being friendly. Instead, my
+model seemed to largely label all posts as `advice` showing that it may be too broad of a category.
 
 
 
