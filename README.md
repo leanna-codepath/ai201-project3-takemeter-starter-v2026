@@ -262,24 +262,25 @@ provide clear distinction when there is ambiguity.
 
 **What I changed:**
 
+I tightened my label definitions, adding more examples, markers, and boundaries between the other two labels.
+
 **Which diagnosis pointed at it:**
+
+This change was meant to fix the problems in criteria 1 and 2, which was diagnosed to be unclear label definitions.
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. `friendly outreach` F1 | ≥ 0.60 | 0.0 | 0.0 | 0.44 | MISSED |
+| 2. Label counts split 45/45/10 for `question`/`advice`/`friendly outreach` | yes | no | no | no | MISSED |
+| 3. Overall accuracy | ≥ 0.65 | 0.53 | 0.53 | 0.60 | MISSED |
+| 4. Beats the baseline on accuracy | yes | no | no | no | MISSED |
+| 5. Greater confidence = greater correctness | yes | yes | yes | yes | MET |
 
 **Did it help, and how do I know:**
 
-<!-- If it didn't, say so. Relabelling that didn't help is a genuinely
-     interesting result and earns full credit. -->
-
-
+The fix did not help, as all the metrics are the exact same as before.
 
 ---
 

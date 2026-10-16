@@ -5,6 +5,6 @@
 #
 # Delete the examples below and put yours in.
 
-question: asks a question or for advice from the subreddit
-advice: gives advice or a recommendation to another user, frequently includes a link
-friendly outreach: posts made purely to be friendly, such as networking or being polite.
+question: The writer is seeking something they don't have: information, a dataset, help, or an opinion. The post needs an answer to be complete. Does NOT include suggestions phrased as questions ("Have you tried X?", "Could you use Y?"); those are advice. If a post both thanks someone and asks a new question, it is question.
+advice: The writer is giving something to someone else: a resource, dataset, tool, link, method, or suggestion, even if it's phrased as a question ("Have you tried X?") or wrapped in politeness ("Thanks! You could try Z"). If the post contains any concrete, usable recommendation, it is advice, even when it is also friendly.
+friendly outreach: The post's only purpose is social: thanks, compliments, congratulations, sharing personal background or small talk, or offers to connect/network. It neither asks for nor gives a concrete resource or method. If you removed the pleasantries and anything useful were left, use the other label.

@@ -41,10 +41,10 @@
     }
   },
   "confidence": {
-    "mean_when_right": 0.5788884162902832,
-    "mean_when_wrong": 0.47401806712150574,
-    "accuracy_most_confident_third": 0.9,
-    "accuracy_least_confident_third": 0.0,
+    "mean_when_right": 0.590690553188324,
+    "mean_when_wrong": 0.4752001464366913,
+    "accuracy_most_confident_third": 1.0,
+    "accuracy_least_confident_third": 0.1,
     "n_per_third": 10
   },
   "device": "cpu",
